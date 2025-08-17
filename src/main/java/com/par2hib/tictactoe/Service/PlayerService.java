@@ -30,6 +30,7 @@ public class PlayerService {
         return playerRepo.findByName(name);
     }
 
+
     // updates by ID
     public Player updatePlayer(String uniqueId, Player player){
         Optional<Player> QueryPlayer = playerRepo.findById(uniqueId);
