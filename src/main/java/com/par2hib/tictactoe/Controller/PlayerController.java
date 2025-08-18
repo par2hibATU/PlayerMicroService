@@ -55,4 +55,11 @@ public class PlayerController {
         return ResponseEntity.ok(result);
     }
 
+
+    // Confirmation message to connect with the GameService
+    @GetMapping("/connection-established")
+    public String message(){
+        return "Connection established with Game Service";
+    }
+
 }
